@@ -22,8 +22,22 @@ if __name__ == "__main__":
     uni1.agregar_persona(profe1)
     uni1.agregar_persona(estu1)
     uni1.agregar_persona(estu2)
-
+    print()
     uni1.listar_personas()
-
-
-
+    print()
+    uni1.listar_estudiantes()
+    print()
+    uni1.listar_profesores()
+    print()
+    uni1.buscar_estudiante("Juan")
+    uni1.buscar_estudiante("Ricardo")
+    uni1.buscar_estudiante("12312")
+    uni1.buscar_estudiante(2123)
+    print()
+    uni1.buscar_estudiantes_por_inicial("J")
+    uni1.buscar_estudiantes_por_inicial("R")
+    uni1.buscar_estudiantes_por_inicial("X")
+    uni1.buscar_estudiantes_por_inicial(5)
+    uni1.buscar_estudiantes_por_inicial("Ju")
+    print()
+    uni1.total_personas()
