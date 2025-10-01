@@ -33,9 +33,11 @@ if __name__ == "__main__":
     uni1.buscar_estudiante("Ricardo")
     uni1.buscar_estudiante("12312")
     uni1.buscar_estudiante(2123)
-
+    print()
     uni1.buscar_estudiantes_por_inicial("J")
     uni1.buscar_estudiantes_por_inicial("R")
     uni1.buscar_estudiantes_por_inicial("X")
     uni1.buscar_estudiantes_por_inicial(5)
     uni1.buscar_estudiantes_por_inicial("Ju")
+    print()
+    uni1.total_personas()

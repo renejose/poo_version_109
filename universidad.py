@@ -103,3 +103,8 @@ class Universidad:
         except ValueError as e:
             print(f"Error: {e}")
             return []
+        
+    def total_personas(self):
+        total = len(self.personas)
+        print(f"Total de personas registradas en {self.nombre}: {total}")
+        return total
