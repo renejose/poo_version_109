@@ -74,3 +74,32 @@ class Universidad:
         except ValueError as e:
             print(f"Error: {e}")
             return None
+        
+    def buscar_estudiantes_por_inicial(self, inicial):
+        try:
+            if not isinstance(inicial, str):
+                raise ValueError("La inicial debe ser una letra.")
+            if len(inicial.strip()) != 1:
+                raise ValueError("Debes ingresar solo una letra como inicial.")
+
+            inicial = inicial.lower()
+            encontrados = []
+
+            for persona in self.personas:
+                if isinstance(persona, Estudiante) and persona.nombre.lower().startswith(inicial):
+                    encontrados.append(persona)
+
+            if not encontrados:
+                print(f"No se encontraron estudiantes que empiecen con '{inicial.upper()}'.")
+                return []
+
+            print(f"=== ESTUDIANTES QUE EMPIEZAN CON '{inicial.upper()}' ===")
+            for i, estudiante in enumerate(encontrados, 1):
+                print(f"{i}. ", end="")
+                estudiante.mostrar_info()
+
+            return encontrados
+
+        except ValueError as e:
+            print(f"Error: {e}")
+            return []
