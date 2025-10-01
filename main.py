@@ -22,8 +22,9 @@ if __name__ == "__main__":
     uni1.agregar_persona(profe1)
     uni1.agregar_persona(estu1)
     uni1.agregar_persona(estu2)
-
+    print()
     uni1.listar_personas()
-
-
-
+    print()
+    uni1.listar_estudiantes()
+    print()
+    uni1.listar_profesores()
