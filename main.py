@@ -28,3 +28,8 @@ if __name__ == "__main__":
     uni1.listar_estudiantes()
     print()
     uni1.listar_profesores()
+    print()
+    uni1.buscar_estudiante("Juan")
+    uni1.buscar_estudiante("Ricardo")
+    uni1.buscar_estudiante("12312")
+    uni1.buscar_estudiante(2123)

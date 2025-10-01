@@ -57,3 +57,20 @@ class Universidad:
                 print(f"{i}. ", end="")
                 profesor.mostrar_info()
         return profesores
+    def buscar_estudiante(self, nombre):
+        try:
+            if not isinstance(nombre, str):
+                raise ValueError("El nombre debe ser una cadena de texto.")
+            
+            for persona in self.personas:
+                if isinstance(persona, Estudiante) and persona.nombre.lower() == nombre.lower():
+                    print("=== ESTUDIANTE ENCONTRADO ===")
+                    persona.mostrar_info()
+                    return persona
+
+            print(f"No se encontró ningún estudiante con el nombre: {nombre}")
+            return None
+        
+        except ValueError as e:
+            print(f"Error: {e}")
+            return None
