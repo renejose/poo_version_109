@@ -6,4 +6,4 @@ class Profesor(Persona):
         self.especialidad = especialidad
 
     def mostrar_info(self):
-        print(f"Estudiante : {self.nombre}, Edad : {self.edad} Especialidad: {self.especialidad}")   
+        print(f"Clase Prof...Estudiante : {self.nombre}, Edad : {self.edad} Especialidad: {self.especialidad}")   
