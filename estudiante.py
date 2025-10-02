@@ -6,6 +6,8 @@ class Estudiante(Persona):
         super().__init__(nombre,edad,dni)
         self.carrera = carrera
         self.__notas = []
+        self.estudiantesList = [] #tarea
+
 
     def agregar_nota(self,nota):
         if 0 <= nota <= 20:
@@ -36,4 +38,21 @@ class Estudiante(Persona):
 
     def mostrar_info(self):
         prom = self.promedio()
-        print(f"Estudiante : {self.nombre}, Edad : {self.edad} Carrera: {self.carrera} , Con Promedio: {prom}")   
+        if prom >10:
+           print(f"Alumno : {self.nombre} esta APROBADO") 
+        else:
+           print(f"Alumno : {self.nombre} esta DESAPROBADO")
+    
+        print(f"Clase Estud...Estudiante : {self.nombre}, Edad : {self.edad} Carrera: {self.carrera} , Con Promedio: {prom}") 
+
+    #tarea
+    def mostrar_si_aprobo():
+        pass
+    
+    def agregarEst(self):
+     self.estudiantesList.append(self.nombre)
+
+    def listar_estudiante(self):
+        for p in self.estudiantesList:
+           print(f"{p}")
+
