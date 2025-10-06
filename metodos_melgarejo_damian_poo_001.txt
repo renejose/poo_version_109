@@ -1,0 +1,19 @@
+
+from persona import Persona
+
+class Estudiante(Persona)
+
+
+def ordenar_estudiantes_por_promedio(self):
+    if not self.estudiantesList:
+        print("No hay estudiantes en la lista para ordenar.")
+        return []
+
+    # Ordenar por promedio (de mayor a menor)
+    estudiantes_ordenados = sorted(self.estudiantesList, key=lambda est: est.promedio(), reverse=True)
+
+    print("\n=== Estudiantes ordenados por promedio ===")
+    for est in estudiantes_ordenados:
+        print(f"{est.nombre} - Promedio: {est.promedio():.2f}")
+    
+    return estudiantes_ordenados
