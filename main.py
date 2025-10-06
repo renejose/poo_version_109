@@ -35,3 +35,10 @@ if __name__ == "__main__":
     uni1.listar_estudiantes()
     uni1.listar_profesores()
     #estu2.listar_estudiante()
+
+
+    # Contar estudiantes por carrera (cabreracastillon_001)
+    uni1.contar_estudiantes_por_carrera()
+
+    # Listar profesores por especialidad (cabreracastillon_001)
+    uni1.listar_profesores_por_especialidad("Bases de Datos")
